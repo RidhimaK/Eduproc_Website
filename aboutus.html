@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <title>Eduproc</title>
+  <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="about.css">
+  </head>
+  <body>
+  
+ 
+<!--BANNER-->
+<div class="banner">
+<span class="content_left">
+<a href="emailto:"><i class="fa fa-envelope"></i> support@eduproc.com</a>
+<a href="tel:+12345678"><i class="fa fa-phone"></i> +00-1234-56789</a>
+</span>
+<span class="content_right">
+<a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+<a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+<a href="#" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+<a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+</span>
+</div>
+
+<!--NAVIGATION-->
+<header>
+<div class="topnav" id="myTopnav">
+<a class="logo">
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="Images/icon.jpg" style="margin:0 10px;float:left;" alt="LEVIOOSA MARKETING.">
+</div>
+<div class="flip-card-back">
+<b>EDUPROC!</b>
+</div>
+</div>
+</div></a>
+<a href="Login.html">Login/Signup</a>
+<a href="contact.html">Contact</a>
+<a href="feedback.html">Feedback</a>
+<a href="index.html">Home</a>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</header>
+
+
+    <div class="menu">
+      <ul>
+        <li>
+          <span onmouseenter="hoverEnter(0)">
+            <i class="fa fa-home"></i>
+          </span>
+        </li>
+        <li>
+          <span onmouseenter="hoverEnter(1)">
+            <i class="fa fa-users"></i>
+          </span>
+        </li>
+        <li>
+          <span onmouseenter="hoverEnter(2)">
+          <i class="fa fa-building"></i>
+          </span>
+        </li>
+        <li>
+          <span onmouseenter="hoverEnter(3)">
+            <i class="fa fa-laptop"></i>
+          </span>
+        </li>
+        <span class="goo-index" id="goo-index"></span>
+      </ul>
+    </div>
+    
+    <div class="content-wrapper">
+      <div id="screen_0" class="screen visible">
+        <h2>Our global reach</h2>
+        <p>Eduproc is a leading global marketplace for teaching and learning, connecting millions of students to the skills they need to succeed. Eduproc as of July 2021:
+		<br>40M Learners<br>50K Instructors <br> 140K Courses <br> 380M Course enrollments <br> 105M Minutes of video <br> 55+ Languages <br> 6,000+ Enterprise customers</p>
+        <div class="image" style="background-image:url(Images/a1.jpg)"></div>
+      </div>
+      
+       <div id="screen_1" class="screen">
+        <h2>A great place to grow</h2>
+        <p>Our team embraces Eduproc’s mission to improve lives through learning.Eduproc’s employees live out our values every day as learners and teachers ourselves. Our culture is diverse, inclusive, and committed to personal and professional development. We’re not afraid to take on a new challenge, and we love taking Eduproc's courses!</p>
+ <div class="image" style="background-image:url(Images/a2.jpg)"></div>
+      </div>
+      
+      
+       <div id="screen_2" class="screen">
+        <h2>Staying ahead of the future of work</h2>
+        <p>Eduproc helps organizations prepare for the ever-evolving future of work. Our curated collection of top-rated business and technical courses gives companies, governments, and nonprofits the power to develop in-house expertise and satisfy employees’ hunger for learning and development.</p>
+          <div class="image" style="background-image:url(Images/a3.jpg)"></div>
+      </div>
+      
+      
+       <div id="screen_3" class="screen">
+        <h2>World-Class Learning for Anyone, Anywhere</h2>
+        <p>Eduproc partners with more than 200 leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.
+			<br><br> Learn from experts at 200+ leading universities and companies.
+			<br><br> Get on-demand lectures for desktop and mobile—on your schedule.
+			<br><br> Explore hundreds of free courses or get started with a free trial.
+			<br><br> Master essential career skills based on comprehensive skills data.</p>
+		 <div class="image" style="background-image:url(Images/a4.jpg)"></div>
+      </div>
+    </div>
+	<script>
+	
+	let gooIndex = document.getElementById('goo-index');
+let hoverEnter = index =>{
+  gooIndex.style.top = 100*index+'px';
+  let allScreens = document.querySelectorAll('.screen');
+  allScreens.forEach(e=>{
+    e.classList.remove('visible')
+  })
+  let nowVisible = document.getElementById('screen_'+index);
+  nowVisible.classList.add('visible');
+}
+	</script>
+	
+	 <section class="footer">
+        <div class="container">
+		<div class="copyright text-center">
+            Copyright &copy; 2021  Made By <span>Ridhima Khyalappa</span>
+        </div>
+		</div>
+			</section>
+  </body>
+</html>
